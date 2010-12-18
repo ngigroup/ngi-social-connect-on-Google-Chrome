@@ -1,6 +1,7 @@
 2010-12-19  smeghead <smeghead7@gmail.com>
 
 	* ボタンエリアの下にfloat解除タグを挿入した。
+	* body のmarginを調整した。
 
 2010-12-18  smeghead <smeghead7@gmail.com>
 
