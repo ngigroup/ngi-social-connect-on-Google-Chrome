@@ -1,0 +1,21 @@
+{
+  "name": "ngi social connect on Google Chrome",
+  "version": "1.0",
+  "description": "Google Chrome拡張機能版の ngi ソーシャルコネクトです。",
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "popup": "background/popup.html"
+  },
+  "background_page": "background/background.html",
+  "icons": {
+    "128": "images/favicon128.png",
+    "16": "images/favicon16.png",
+    "32": "images/favicon32.png",
+    "48": "images/favicon48.png"
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
