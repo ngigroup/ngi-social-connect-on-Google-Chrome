@@ -1,7 +1,7 @@
 {
   "name": "ngi social connect on Google Chrome",
   "version": "1.0",
-  "description": "Google Chrome拡張機能版の ngi ソーシャルコネクトです。",
+  "description": "ngi ソーシャルコネクトを、Google Chromeで簡単に利用できるようにするための、拡張機能です。",
   "browser_action": {
     "default_icon": "images/icon.png",
     "popup": "background/popup.html"
