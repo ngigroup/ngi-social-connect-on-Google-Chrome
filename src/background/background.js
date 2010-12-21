@@ -37,11 +37,9 @@ chrome.tabs.onSelectionChanged.addListener(function(tabid){
 });
 
 chrome.tabs.onUpdated.addListener(function(tabid, inf){
-  if (inf.status === 'loading') {
     chrome.tabs.getSelected(current_window.id, function(tab){
       run_on_tab(tab);
     });
-  }
 });
 
 /* vim: set ts=2 sw=2 sts=2 expandtab fenc=utf-8: */
