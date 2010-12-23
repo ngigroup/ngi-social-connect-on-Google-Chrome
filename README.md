@@ -3,7 +3,7 @@
 ngi ソーシャルコネクトを、Google Chromeで簡単に利用できるようにするための、拡張機能です。
 
 # authors
- - h-kikumoto
+ - hisaju
  - smeghead
 
 Copyright (C) 2010 ngi group, inc. 
