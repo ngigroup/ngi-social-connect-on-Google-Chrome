@@ -4,7 +4,7 @@ $(document).ready(function() {
   
   $('#sasayaki_url').click(function(){
     chrome.tabs.getSelected(null, function(tab){
-      chrome.tabs.update(tab.id, {'url':'http://cr.sasayaki.tv/','selected':true});
+      chrome.tabs.create({'url':'http://cr.sasayaki.tv/','selected':true, 'index':tab.index+1});
     });
   });
   
