@@ -1,3 +1,7 @@
+2010-12-26  smeghead <smeghead7@gmail.com>
+
+	* デザインの微調整。
+
 2010-12-25  smeghead <smeghead7@gmail.com>
 
 	* マルチウィンドウの場合に、ページタイトル・URLを正しく取得できない場合があ
