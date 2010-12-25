@@ -1,6 +1,13 @@
 var siteId = '57DZ';
 
 $(document).ready(function() {
+  
+  $('#sasayaki_url').click(function(){
+    chrome.tabs.getSelected(null, function(tab){
+      chrome.tabs.update(tab.id, {'url':'http://cr.sasayaki.tv/','selected':true});
+    });
+  });
+  
   chrome.extension.getBackgroundPage().get_current_page_information(function(page_info){
     // tag string templates.
     var div_iine = '<div id="nsc_iine" class="nsc_iine" siteId="' + siteId + '" targetUrl="' + encodeURIComponent(page_info.url)  + 

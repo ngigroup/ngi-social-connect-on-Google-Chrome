@@ -1,6 +1,6 @@
 {
   "name": "ngi social connect on Google Chrome",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Twitter・Facebook・mixiのソーシャルボタンが設置されていないサイトでも、それらソーシャルメディアに’つぶやく’などの投稿を可能にする、ngiソーシャルコネクトのGoogle Chrome用拡張機能です。",
 
   "browser_action": {
