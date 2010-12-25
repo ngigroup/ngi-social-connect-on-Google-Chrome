@@ -1,7 +1,11 @@
+2010-12-25  fukata <tatsuya.fukata@gmail.com>
+
+	* ポップアップウィンドウにcr.sasayaki.tvへのリンクを付与した。
+
 2010-12-25  smeghead <smeghead7@gmail.com>
 
-	* マルチウィンドウの場合に、ページタイトル・URLを正しく取得できない場合があ
-	るのを修正した。ページタイトル・URLの取得方法を大幅に変更した。
+	* マルチウィンドウの場合に、ページタイトル・urlを正しく取得できない場合があ
+	るのを修正した。ページタイトル・urlの取得方法を大幅に変更した。
 
 2010-12-23  smeghead <smeghead7@gmail.com>
 
