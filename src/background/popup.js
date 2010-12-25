@@ -26,7 +26,7 @@ $(document).ready(function() {
     $('#buttons').append(div_cmt);
 
     // insert friend list.
-    $('body').append(friend_list);
+    $('#friendlist').append(friend_list);
 
     // insert widgets script.
     window.setTimeout(function(){
