@@ -1,13 +1,13 @@
 function get_current_page_information(callback) {
-  var page_info = {title: '', url: ''};
   chrome.tabs.getSelected(undefined, function(tab){
+    var page_info = {title: '', url: ''};
     var url = tab.url;
-    if (!/^http/.test(url)) return;
-    if (url.length > 255) return;
-    page_info = {
-      title: tab.title,
-      url: url
-    };
+    if (/^http/.test(url) && url.length <= 255) {
+      page_info = {
+        title: tab.title,
+        url: url
+      };
+    }
     callback(page_info);
   });
 }
