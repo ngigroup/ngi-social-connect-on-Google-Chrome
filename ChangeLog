@@ -1,6 +1,8 @@
 2010-12-26  smeghead <smeghead7@gmail.com>
 
 	* cr.sasayaki.tvのリンクにcssを適応した。
+	* urlが取得できなかった場合は、イイネ・つぶやきボタンを表示しないよう
+	に修正した。
 
 2010-12-26  fukata <tatsuya.fukata@gmail.com>
 

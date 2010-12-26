@@ -2,11 +2,11 @@ var siteId = '57DZ';
 
 $(document).ready(function() {
   
-  $('#sasayaki_url').click(function(){
-    chrome.tabs.getSelected(null, function(tab){
-      chrome.tabs.create({'url':'http://cr.sasayaki.tv/','selected':true, 'index':tab.index+1});
-    });
-  });
+//  $('#sasayaki_url').click(function(){
+//    chrome.tabs.getSelected(null, function(tab){
+//      chrome.tabs.create({'url':'http://cr.sasayaki.tv/','selected':true, 'index':tab.index+1});
+//    });
+//  });
   
   chrome.extension.getBackgroundPage().get_current_page_information(function(page_info){
     // tag string templates.
@@ -22,8 +22,10 @@ $(document).ready(function() {
     $('#page_url').text(page_info.url || '(empty)');
 
     // insert iine and comment buttons.
-    $('#buttons').append(div_iine);
-    $('#buttons').append(div_cmt);
+    if (page_info.url) {
+      $('#buttons').append(div_iine);
+      $('#buttons').append(div_cmt);
+    }
 
     // insert friend list.
     $('#friendlist').append(friend_list);
