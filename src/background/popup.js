@@ -1,6 +1,7 @@
 var siteId = '57DZ';
 
 $(document).ready(function() {
+  var options = get_options();
   
   $('#sasayaki_url').click(function(){
     chrome.tabs.getSelected(null, function(tab){
@@ -28,7 +29,18 @@ $(document).ready(function() {
     }
 
     // insert friend list.
-    $('#friendlist').append(friend_list);
+    if (options.friend_list_visible) {
+      $('#friendlist').append(friend_list);
+    }
+
+    // friend list visible setting.
+    $('#friend_list_trigger').text(options.friend_list_visible ? '−' : '＋')
+      .attr('title', options.friend_list_visible ? 'フレンドリストを非表示にします' : 'フレンドリストを非表示にします')
+      .click(function(){
+        options.friend_list_visible = !options.friend_list_visible;
+        save_options(options);
+        location.reload();
+      });
 
     // insert widgets script.
     window.setTimeout(function(){
@@ -37,4 +49,16 @@ $(document).ready(function() {
   });
 });
 
+//get options.
+function get_options() {
+  var options = {friend_list_visible: true};
+  if (localStorage.nsc_options) {
+    options = JSON.parse(localStorage.nsc_options);
+  }
+  return options;
+}
+//save options.
+function save_options(options) {
+  localStorage.nsc_options = JSON.stringify(options);
+}
 /* vim: set ts=2 sw=2 sts=2 expandtab fenc=utf-8: */
