@@ -39,6 +39,7 @@ div.url {
 }
 a#friend_list_trigger {
   text-decoration: none;
+  font-weight: bold;
   color: #fff;
   background-color: #084c94;
   padding: 3px;
