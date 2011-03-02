@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     // friend list visible setting.
     $('#friend_list_trigger').text(options.friend_list_visible ? '−' : '＋')
-      .attr('title', options.friend_list_visible ? 'フレンドリストを非表示にします' : 'フレンドリストを非表示にします')
+      .attr('title', options.friend_list_visible ? 'フレンドリストを非表示にします' : 'フレンドリストを表示します')
       .click(function(){
         options.friend_list_visible = !options.friend_list_visible;
         save_options(options);
