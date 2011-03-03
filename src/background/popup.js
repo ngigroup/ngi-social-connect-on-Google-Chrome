@@ -24,8 +24,8 @@ $(document).ready(function() {
 
     // insert iine and comment buttons.
     if (page_info.url) {
-      $('#buttons').append(div_iine);
-      $('#buttons').append(div_cmt);
+      $('#buttons').append(div_iine)
+                   .append(div_cmt);
     }
 
     // insert friend list.
